@@ -1,0 +1,29 @@
+visual studio
+    CSS Peek
+    HTML Boilerplate // Emmet  
+    Color Info
+    //Change Case
+    AutoFileName
+
+    sftp
+        sftp config
+
+
+
+Sublime Text
+
+    Packege Control: Install Packege
+        Emmet
+        AutoFileName
+        All Autocomplite
+        BracketHighlighter  /// Highlight Matching Tag
+        Placeholders
+
+    keys
+        alt+shift+1
+        alt+shift+2
+        alt+shift+3
+
+        ctrl+shift+p
+
+

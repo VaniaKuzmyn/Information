@@ -1,0 +1,4 @@
+<div data-vide-bg="build/videos/video.mp4">
+<script src="build/js/jquery.vide.js"></script>
+
+if use reset css need add(max-width: none) for full screen video

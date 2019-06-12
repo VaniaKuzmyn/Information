@@ -1,0 +1,39 @@
+Git Bash
+
+clear
+cd .. 				step back
+cd     			 move back
+cd /c/file  		     move
+git init
+git status
+git add .    		 all files
+git add file.html
+git commit -m "comment"
+git checkout 09bd8cc1 hello.txt    load repository with server
+git push origin master      load to server
+
+Esc Z Z ��� Esc :wq Return ��� ESC :q!
+
+��� ������ ������� Insert.
+
+$ git reset --hard a3775a5485af0af20375cedf46112db5f813322a
+$ git push --force
+
+�or create a new repository on the command line
+echo "# Site_1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/VaniaKuzmyn/Site_1.git
+git push -u origin master
+�or push an existing repository from the command line
+git remote add origin https://github.com/VaniaKuzmyn/Site_1.git
+git push -u origin master
+git commit ‐‐amend
+
+https://www.youtube.com/watch?v=EjRQ8qccLCQ
+https://eax.me/git-commands/
+https://git-scm.com/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B2-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9
+https://proglib.io/p/git-for-half-an-hour/
+http://qaru.site/questions/12795/how-do-you-copy-and-paste-into-git-bash
+https://techrocks.ru/2018/01/07/useful-git-tips/

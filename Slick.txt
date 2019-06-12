@@ -1,0 +1,53 @@
+slick slider
+
+js
+
+$('.slider').slick({
+            dots: true,
+            prevArrow: "<button class='slick-arrow slick-arrow_prew'><i class='fas fa-arrow-left'></i></button>",
+            nextArrow: "<button class='slick-arrow slick-arrow_next'><i class='fas fa-arrow-right'></i></button>",
+        });
+
+    $('.slick-dots li').addClass('slick-dot');
+    $('.slick-dots li').html("<i class='fas fa-circle'></i>");
+
+-----------------------------------------------
+
+css
+
+.slick {
+    &-arrow {
+        position: absolute;
+        top: 93px;
+        background-color: rgba(#fff, 0.7);
+        border: 1px solid rgb(0, 255, 255);
+        border-radius: 50%;
+        padding: 5px;
+        outline: none !important;
+    }
+    &-arrow{
+        &_prew {
+            left: 25px;
+            z-index: 1;
+        }
+        &_next {
+            right: 25px;
+        }
+    }
+
+    &-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    &-dot {
+        margin: 0 10px;
+        color: rgba(#000, 0.5);
+        cursor: pointer;
+    }
+
+    &-active {
+        color: #000;
+    }
+}

@@ -1,0 +1,141 @@
+package.json and gulpfile.js // need to start
+gulpfile.js
+
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const browserSync = require('browser-sync').create();
+//const cleanCss = require('gulp-clean-css');
+//const uglify = require('gulp-uglify');
+//const babel = require('gulp-babel');
+//const concat = require('gulp-concat');
+//const sourcemaps = require('gulp-sourcemaps');
+
+function styles() {
+    return gulp.src('./src/sass/main.sass')
+        .pipe(sass())
+        .pipe(autoprefixer({
+            browsers: ['>0.1%'],
+            cascade: false
+        }))
+        /*.pipe(cleanCss({
+            level: 2
+        }))*/
+    .pipe(gulp.dest('./build/css'))
+        .pipe(browserSync.stream());
+}
+/*
+const jsFiles = [
+    './src/js/main.js',
+    './src/js/form.js',
+]
+*/
+function animation() {
+    return gulp.src('./src/js/*.js')
+        //.pipe(sourcemaps.init())
+        /*.pipe(uglify({
+            toplevel: true
+        }))*/
+        /*.pipe(babel({
+        presets: ['env']
+        //or 
+        //presets: ['@babel/env']
+        }))*/
+        //.pipe(concat('main.js'))
+        //.pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('./build/js'))
+        .pipe(browserSync.stream());
+}
+
+function watch() {
+    browserSync.init({
+        server: "./"
+    });
+
+    gulp.watch("./src/sass/*.sass", styles);
+    gulp.watch("./src/js/main.js", animation);
+    gulp.watch("./index.html").on('change', browserSync.reload);
+}
+
+gulp.task('styles', styles);
+gulp.task('animation', animation);
+
+gulp.task('watch', watch);
+
+
+
+---------------------------------------------------------------------
+
+package.json
+
+{
+  "name": "progect10",
+
+"version": "1.0.0",
+
+"description": "",
+
+"main": "gulpfile.js",
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+"keywords": [],
+
+"author": "",
+
+"license": "ISC",
+
+"devDependencies": {
+
+"browser-sync": "^2.26.3",
+
+"gulp": "^4.0.0",
+
+"gulp-autoprefixer": "^6.0.0",
+
+"gulp-clean-css": "^4.0.0",
+
+"gulp-sass": "^4.0.2",
+
+"gulp-uglify": "^3.0.2"
+  }
+}
+
+---------------------------------------------------------------------
+
+cls
+npm r
+npm init -y	// packege.json
+npm i
+npm ls -g --depth=0
+npm i gulp-cli -g		//cli ��������� ��������� ������ �����
+npm i gulp /-D // npm i gulp@next /-D
+//npm i gulp-concat -D
+npm i browser-sync --save-dev
+npm i gulp-sass -D
+
+//gulp-sourcemaps  �������� f12 ���������� ������ � ����� css
+//.pipe(sourcemaps.init())
+//gulp-watch
+
+npm i babel-core
+npm i gulp-babel 
+npm i babel-preset-env
+/*
+
+const cssFiles = [
+    './src/css/main.css',
+    './src/css/second.css',
+]
+
+function styles() {
+    return gulp.src(cssFiles)
+}
+
+*/
+
+https://simplamarket.com/blog/ispolzovanie-gulp-chast-1---ustanovka
+https://geekbrains.ru/posts/how_to_gulp
+

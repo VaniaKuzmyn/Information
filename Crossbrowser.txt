@@ -1,0 +1,55 @@
+css
+
+@supports(��������){  // @supports not
+	// ie10 don^t support
+}
+supports css
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    // IE10+ CSS styles go here
+    @media(max-width:400px)
+        // IE10+ CSS styles go here
+}
+@supports (-ms-accelerator:true) {
+    // IE Edge 12+ CSS styles go here
+}
+
+Только IE 10
+_:-ms-lang(x), .ie10 { property: value\9; }
+IE 10 и выше
+_:-ms-lang(x), .ie10up { property: value; }
+IE 11
+_:-ms-fullscreen, :root .ie11up { property: value; }
+_:-ms-fullscreen, .ie11up { property: value; }
+---------------------------------------------
+
+js
+
+if (navigator.userAgent.match(/msie/i) || navigator.userAgent.match(/trident/i)) {
+        console.log('msie') // Ie
+    }
+    else if (navigator.userAgent.match(/firefox/i)) {
+        console.log('firefox mozila') // gecko = firefox mozila
+    }
+    else if (navigator.userAgent.match(/chrome/i)) {
+        console.log('Chrome and Opera') // Chrome and Opera(webkit)
+    }
+    else if (navigator.userAgent.match(/safari/i)) {
+        console.log('Safary') // Safary (and Opera)
+    }
+
+if (navigator.appVersion.indexOf("MSIE 10") !== -1) {
+        console.log('ie10')
+    }
+------------------------------------------------
+<!--[if IE 7]>
+<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+<![endif]-->
+<!--[if IE 8]><![endif]-->
+<!--[if lt IE 9]><![endif]-->
+
+Stackoverflow
+Browsera
+Browsershots
+https://www.browserling.com/
+http://www.javascripter.net/faq/browsern.htm
