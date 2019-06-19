@@ -1,0 +1,162 @@
+
+target ='_blank'
+
+onscroll
+onwheel  // колесо мышки
+mousewheel
+
+https://console.cloud.google.com/apis/credentials?hl=ru&project=acoustic-gizmo-237016
+
+promoslider
+iosslider
+
+Canvas Tag Cloud
+
+countUp js
+
+particles.js
+
+cubic-bezier
+jquery.easie.js
+
+parallax js
+
+плагин Revealat
+
+
+background fixed
+
+fullpage js
+
+fancybox js
+
+jQuery Mask
+
+
+imagemin(gulptask)
+thumbnails
+
+GitHub
+VaniaKuzmyn // @mail.ru
+V1234567890k
+
+Google Page Speed
+Проверьте Вашу работу используя Google Chrome Audit и убедитесь что
+Ваша работа в зеленой зоне для Performance, Best practices, SEO (mobile
+and desktop для 3G).
+
+Проверьте Вашу работу используя Webpagetest и убедитесь что
+показатели близки к AAAAAA.
+
+<script>
+  div.insertAdjacentHTML('afterBegin', '<p>Привет</p>');
+  div.insertAdjacentHTML('beforeEnd', '<p>Пока</p>');
+</script>
+
+<input onkeydown="this.nextSibling.innerHTML = event.keyCode"> <b></b>
+
+onmousemove
+
+event.stopPropagation() ==event.preventDefault()
+event.stopImmediatePropagation()
+
+
+bLazy.js
+yall.js (Yet Another Lazy Loader) — использует Intersection Observer API и возвращается к отложенной загрузке на основе событий. Поддерживает все основные типы элементов HTML, но не «background-image». Также работает на Internet Explorer 11 и старших версиях.
+lazysizes — библиотека с обширной функциональностью. Поддерживает адаптивные изображения «srcset» и атрибут «sizes». Высокая эффективность даже без Intersection Observer API.
+jQuery Lazy — простая, основанная на jQuery, библиотека отложенной загрузки. 
+WeltPixel Lazy Loading Enhanced — расширение для Magento 2 для отложенной загрузки изображений. 
+Magento Lazy Image Loader — расширение для Magento 1.x для отложенной загрузки изображений. 
+Shopify Lazy Image Plugin — расширение для Shopify для отложенной загрузки изображений. Платная. 
+WordPress A3 Lazy Load — плагин отложенной загрузки изображений для WordPress. 
+
+http://site-on.net/create/cms/16-gw-ajax-hiding-for-seo
+
+ctrl shift I
+
+Вендорные префиксы
+
+Вендорный префикс	Производитель		Браузер					Браузерный движок
+-o-, -op-, -xv-		Opera 	Software	Opera					Presto
+-moz-			проект Mozilla		Firefox, SeaMonkey, Camino и др.	Gecko
+-ms-			Microsoft		Internet Explorer 8			Trident
+-khtml-			проект KDE		Safari до версии 3, Konqueror и др.	KHTML послужил основой для WebKit
+-webkit-		Apple			Safari 3+, Google Chrome и др.		WebKit
+
+if (top.VBArray) {
+    // IE
+}
+Данный хак работает и в IE11, IE12
+https://www.kobzarev.com/makeup/ie10-css-hacks/
+
+isotope js 
+fullPage js
+maskedinput jquery
+
+Scrollbar стилизовать можно только в webkit браузерах и ie да и то не очень сильно. В ie так не получится скорее всего. В webkit с помощью свойств:
+::-webkit-scrollbar
+::-webkit-scrollbar-button
+::-webkit-scrollbar-track
+::-webkit-scrollbar-track-piece 
+::-webkit-scrollbar-thumb
+::-webkit-scrollbar-corner
+::-webkit-resizer.
+
+::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #666; }
+::-webkit-scrollbar-track {  background-color: #999;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}}
+::-webkit-resizer { background-color: #666;}
+
+gulp-imagemin
+gulp-imageresize
+srcset
+
+
+class='d-none d-lg-block'
+
+spikmi
+
+
+"use strict";
+
+
+form trigger 'reset'
+
+
+optipic
+
+npm i gulp tiny-png-compress
+
+font-display: swap;
+
+https://goodweb.me/webmastering/podsvetka-aktivnogo-punkta-menyu-s-pomoshchyu-js/
+https://www.pandoge.com/moduli_i_skripty/vydelyaem-aktivnyy-punkt-menyu-na-jquery
+
+typeIt
+fullpag
+
+crisp
+
+https://www.youtube.com/watch?v=d34GsFz-HkY      parallax
+
+pagepilling js
+modernizr js
+waypoints js
+http://stephen.band/jparallax/
+fullpage css js 
+responsive slides js
+popper js
+textyle js
+textile js
+
+https://www.youtube.com/user/agragregra/videos
+https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg/videos
+https://www.youtube.com/channel/UCY10FZglXJ8RL3xB04VpykQ/videos
+https://www.youtube.com/user/loftblog/videos
+https://www.youtube.com/user/AlexeySuprun/videos
+https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog
+https://www.youtube.com/channel/UC8xTHK97Ng__KZvGcO_K7CA/videos
+https://www.youtube.com/user/dmitrylavr/videos
