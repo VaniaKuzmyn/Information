@@ -20,3 +20,22 @@
     Browsershots
     https://www.browserling.com/
     http://www.javascripter.net/faq/browsern.htm
+
+    scrollMonitor.js
+    anime.js
+    jQuery Interactive BG
+    Readmore.js - плагин скрывающий большой текст
+    swiper js
+
+    https://animejs.com/
+    https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q/videos
+
+    magnificpopup
+    pagepiling js
+    DynCSS js
+    anime js
+    dat gui js
+
+    star box shadow
+    maskedinput js
+    https://www.cufonfonts.com/

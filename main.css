@@ -1,0 +1,15 @@
+/* Open next lvl menu with hover */
+.menu-item:hover
+	& .secondlvl
+		display: block
+		& > li:hover > a:before
+			opacity: 1
+		& .secondlvl-item
+			&:hover .thirdlvl
+				display: block
+				& > li:hover > a:before
+                    opacity: 1
+                    
+    /* Remove hover on mobile and hover only '.menu-item:before' */
+	& .menu-item-just:hover + .secondlvl
+        display: none

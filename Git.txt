@@ -14,7 +14,7 @@ git push origin master      load to server
 
 Esc Z Z ��� Esc :wq Return ��� ESC :q!
 
-��� ������ ������� Insert.
+Insert.
 
 $ git reset --hard a3775a5485af0af20375cedf46112db5f813322a
 $ git push --force

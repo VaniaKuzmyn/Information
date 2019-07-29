@@ -21,42 +21,37 @@
     <?
         wp_head();
     ?>
-
 </head>
 <body>
 
+    <?php the_field('name_field'); ?>
 
-
-            <?php
-            global $post;
-            $tmp_post = $post;
-            $args = array('post_type'   => 'type');
-            $myposts = get_posts( $args );
-            foreach( $myposts as $post ){ setup_postdata($post);
-                ?>
-                <?php the_meta(); ?>
-                <?php echo $post->post_title; ?>
-                <?php echo $post->post_content; ?>
-                <?php
-            } 
-            $post = $tmp_post;
-            ?>
+    <?php
+    global $post;
+    $tmp_post = $post;
+    $args = array('post_type'   => 'type');
+    $myposts = get_posts( $args );
+    foreach( $myposts as $post ){ setup_postdata($post);
+        ?>
+        <?php the_meta(); ?>
+        <?php echo $post->post_title; ?>
+        <?php echo $post->post_content; ?>
+        <?php
+    } 
+    $post = $tmp_post;
+    ?>
            
+    <?php foreach(getFunc() as $review): ?>
+        <img class ='' src="<?php echo $review['thumbnail'] ?>" alt="alt">
+        <?php echo $review['title'] ?>
+        <?php echo $review['content'] ?>
+    <?php endforeach ?>
 
-
-
-
-        <?php foreach(getFunc() as $review): ?>
-            <img class ='' src="<?php echo $review['img'] ?>" alt="alt">
-            <?php echo $review['title'] ?>
-            <?php echo $review['name'] ?>
-            <?php echo $review['content'] ?>
-        <?php endforeach ?>
-
-
-
-
-            <?
+    <?php 
+        echo do_shortcode('[contact-form-7 id="8" title="Контактная форма 1"]');
+    ?>
+    
+    <?
         wp_footer();
     ?>       
     </body>

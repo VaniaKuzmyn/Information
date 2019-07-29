@@ -3,3 +3,4 @@ Contact Form 7
 Contact Form CFDB7
 WP Slick Slider and Image Carousel
 Smush
+Autoptimize

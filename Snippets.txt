@@ -8,8 +8,6 @@ visual studio
     sftp
         sftp config
 
-
-
 Sublime Text
 
     Packege Control: Install Packege

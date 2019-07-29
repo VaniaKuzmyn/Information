@@ -1,37 +1,24 @@
-
 target ='_blank'
 
 onscroll
-onwheel  // колесо мышки
+onwheel  
 mousewheel
-
+https://www.cufonfonts.com/
 https://console.cloud.google.com/apis/credentials?hl=ru&project=acoustic-gizmo-237016
 
 promoslider
 iosslider
-
 Canvas Tag Cloud
-
 countUp js
-
 particles.js
-
 cubic-bezier
 jquery.easie.js
-
 parallax js
-
-плагин Revealat
-
-
+?????? Revealat
 background fixed
-
 fullpage js
-
-fancybox js
-
+fancybox jS
 jQuery Mask
-
 
 imagemin(gulptask)
 thumbnails
@@ -40,17 +27,10 @@ GitHub
 VaniaKuzmyn // @mail.ru
 V1234567890k
 
-Google Page Speed
-Проверьте Вашу работу используя Google Chrome Audit и убедитесь что
-Ваша работа в зеленой зоне для Performance, Best practices, SEO (mobile
-and desktop для 3G).
-
-Проверьте Вашу работу используя Webpagetest и убедитесь что
-показатели близки к AAAAAA.
 
 <script>
-  div.insertAdjacentHTML('afterBegin', '<p>Привет</p>');
-  div.insertAdjacentHTML('beforeEnd', '<p>Пока</p>');
+  div.insertAdjacentHTML('afterBegin', '<p></p>');
+  div.insertAdjacentHTML('beforeEnd', '<p></p>');
 </script>
 
 <input onkeydown="this.nextSibling.innerHTML = event.keyCode"> <b></b>
@@ -60,40 +40,29 @@ onmousemove
 event.stopPropagation() ==event.preventDefault()
 event.stopImmediatePropagation()
 
-
 bLazy.js
-yall.js (Yet Another Lazy Loader) — использует Intersection Observer API и возвращается к отложенной загрузке на основе событий. Поддерживает все основные типы элементов HTML, но не «background-image». Также работает на Internet Explorer 11 и старших версиях.
-lazysizes — библиотека с обширной функциональностью. Поддерживает адаптивные изображения «srcset» и атрибут «sizes». Высокая эффективность даже без Intersection Observer API.
-jQuery Lazy — простая, основанная на jQuery, библиотека отложенной загрузки. 
-WeltPixel Lazy Loading Enhanced — расширение для Magento 2 для отложенной загрузки изображений. 
-Magento Lazy Image Loader — расширение для Magento 1.x для отложенной загрузки изображений. 
-Shopify Lazy Image Plugin — расширение для Shopify для отложенной загрузки изображений. Платная. 
-WordPress A3 Lazy Load — плагин отложенной загрузки изображений для WordPress. 
-
+yall.js (Yet Another Lazy Loader) 
 http://site-on.net/create/cms/16-gw-ajax-hiding-for-seo
 
 ctrl shift I
 
-Вендорные префиксы
-
-Вендорный префикс	Производитель		Браузер					Браузерный движок
 -o-, -op-, -xv-		Opera 	Software	Opera					Presto
--moz-			проект Mozilla		Firefox, SeaMonkey, Camino и др.	Gecko
+-moz-			?????? Mozilla		Firefox, SeaMonkey, Camino ? ??.	Gecko
 -ms-			Microsoft		Internet Explorer 8			Trident
--khtml-			проект KDE		Safari до версии 3, Konqueror и др.	KHTML послужил основой для WebKit
--webkit-		Apple			Safari 3+, Google Chrome и др.		WebKit
+-khtml-			?????? KDE		Safari ?? ?????? 3, Konqueror ? ??.	KHTML ???????? ??????? ??? WebKit
+-webkit-		Apple			Safari 3+, Google Chrome ? ??.		WebKit
 
 if (top.VBArray) {
     // IE
 }
-Данный хак работает и в IE11, IE12
+?????? ??? ???????? ? ? IE11, IE12
 https://www.kobzarev.com/makeup/ie10-css-hacks/
 
 isotope js 
 fullPage js
 maskedinput jquery
 
-Scrollbar стилизовать можно только в webkit браузерах и ie да и то не очень сильно. В ie так не получится скорее всего. В webkit с помощью свойств:
+Scrollbar ??????????? ????? ?????? ? webkit ????????? ? ie ?? ? ?? ?? ????? ??????. ? ie ??? ?? ????????? ?????? ?????. ? webkit ? ??????? ???????:
 ::-webkit-scrollbar
 ::-webkit-scrollbar-button
 ::-webkit-scrollbar-track
@@ -113,23 +82,12 @@ Scrollbar стилизовать можно только в webkit браузерах и ie да и то не очень силь
 gulp-imagemin
 gulp-imageresize
 srcset
-
-
 class='d-none d-lg-block'
-
 spikmi
-
-
 "use strict";
-
-
 form trigger 'reset'
-
-
 optipic
-
 npm i gulp tiny-png-compress
-
 font-display: swap;
 
 https://goodweb.me/webmastering/podsvetka-aktivnogo-punkta-menyu-s-pomoshchyu-js/
@@ -137,7 +95,6 @@ https://www.pandoge.com/moduli_i_skripty/vydelyaem-aktivnyy-punkt-menyu-na-jquer
 
 typeIt
 fullpag
-
 crisp
 
 https://www.youtube.com/watch?v=d34GsFz-HkY      parallax
@@ -160,3 +117,33 @@ https://www.youtube.com/user/AlexeySuprun/videos
 https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog
 https://www.youtube.com/channel/UC8xTHK97Ng__KZvGcO_K7CA/videos
 https://www.youtube.com/user/dmitrylavr/videos
+
+var initCountTo = false,
+        number = $('.number'),
+        countTo = function countTo() {
+            number.each(function () {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).data('to')
+                }, {
+                    duration: 5000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                })
+            })
+        };
+
+    applyAnimation(number, countTo, initCountTo);
+
+    https://htmlacademy.ru
+    https://www.flaticon.com/
+    https://daneden.github.io/animate.css/
+    https://fonts.google.com
+    https://fontawesome.com/icons?d=gallery&q=chek&m=free
+    https://codebra.ru/ru/lessons-html/form/9/1
+    https://bootstrap-4.ru/docs/4.0/getting-started/introduction/
+    https://api.jquery.com/
+    http://fotorama.io/#unsplash__0627c11f-522d-48b9-9f17-9ea05b769aaa
+    https://webfonts.pro
+    http://kenwheeler.github.io/slick/

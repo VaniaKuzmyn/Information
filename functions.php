@@ -8,7 +8,6 @@
     define('NEWTHEME_IMG_DIR', NEWTHEME_THEME_ROOT . '/build/images/');
     define('NEWTHEME_AJAX_DIR', NEWTHEME_THEME_ROOT . '/build/ajax/');
     
-    
     add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
     function theme_name_scripts() {
         wp_enqueue_style( 'animate', NEWTHEME_CSS_DIR . '/animate.css');
@@ -16,7 +15,6 @@
         wp_enqueue_style( 'slick-theme', NEWTHEME_CSS_DIR . '/slick-theme.css');
         wp_enqueue_style( 'main', NEWTHEME_CSS_DIR . '/main.css');
         wp_enqueue_style( 'theme', get_stylesheet_uri());
-
 
         wp_deregister_script( 'jquery' );
         wp_register_script( 'jquery', 'https://code.jquery.com/jquery-3.4.0.min.js');
@@ -36,11 +34,10 @@
 
         function register_post_types(){
 
-           
             register_post_type('PostType', array(
                 'labels' => array(
                     'name'               => 'Name', // основное название для типа записи
-                    'singular_name'      => 'ACF', // название для одной записи этого типа
+                    'singular_name'      => 'Name', // название для одной записи этого типа
                     'add_new'            => 'Добавить -', // для добавления новой записи
                     'add_new_item'       => 'Добавление -', // заголовка у вновь создаваемой записи в админ-панели.
                     'edit_item'          => 'Редактирование -', // для редактирования типа записи
@@ -53,20 +50,33 @@
                 ),
                 'public'              => false,
                 'show_ui'             => true, // зависит от public
-                'menu_icon'           => 'dashicons-welcome-learn-more', // wp dashicons
+                //'menu_icon'           => 'dashicons-welcome-learn-more', // wp dashicons
                 'supports'            => array('title', 'editor', 'thumbnail') // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
                                                // for thumbnail need  add_theme_support('post-thumbnails'); 
             ) );
-
     }
 
-   
     $posts = get_posts( array(
         'orderby'     => 'date',
         'order'       => 'ASC',
         'post_type'   => 'PostType'
     ) );
     
+/* <?php
+global $post;
+$tmp_post = $post;
+$args = array('post_type'   => 'faq');
+$myposts = get_posts( $args );
+foreach( $myposts as $post ){ setup_postdata($post);
+    ?>
+    <h3 class="link-title"><?php echo $post->post_title; ?></h3>
+        <p class="link-text">
+        <?php echo $post->post_content; ?>
+        </p>
+    <?php
+} 
+$post = $tmp_post;
+?> */
 
     function getPostType(){
         $args = array(
@@ -74,29 +84,27 @@
             'order'       => 'ASC',
             'post_type'   => 'PostType'
         );
-            $variables = [];
+            $reviews = [];
             foreach(get_posts($args) as $post){
                 $review = get_fields($post->ID);
                 $review['title'] = $post->post_title;
                 $review['content'] = $post->post_content;
                 $review['thumbnail'] = get_the_post_thumbnail_url( $post->ID, 'thumbnail' );
-
-                $variables[] = $review;
+                $review['time'] = human_time_diff( get_post_time('U'), current_time('timestamp') . ' назад'); //Posting time
+                $reviews[] = $review;
             }
         
-        return $variables;
+        return $reviews;
     }
 
-
-
-
+/* <?php foreach(getReviews() as $review): ?>
+    <?php echo $review['title'] ?>
+    <?php echo $review['content'] ?>
+    <?php echo $review['thumbnail'] ?>
+<?php endforeach ?> */
 
     // remove tag 'span' from the form
     add_filter('wpcf7_form_elements', function($content) {
         $content = preg_replace('/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content);
-    
         return $content;
     });
-   
-
-    
